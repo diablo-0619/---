@@ -5,51 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MTE サバイバルゲーム ルールブック</title>
   <link rel="stylesheet" href="index.css">
+  
   <style>
     body {
       margin: 0;
+      padding: 16px; /* 画面端に余白を追加 */
       height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      background-color: #f7f7f7;
-      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+      justify-content: flex-start; /* 上から配置するように変更 */
+      background-color: #f4f7f6; /* 背景色を少し変更 */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      box-sizing: border-box; /* padding計算のため */
     }
 
-    h1 {
-      margin: 10px 0;
-      font-size: 1.3rem;
+   h1 {
+      width: 100%; /* 幅を画面いっぱいに */
+      max-width: 800px; /* PCでの最大幅はPDFと揃える */
+      margin: 10px 0 16px 0;
+      padding-bottom: 16px; /* 下線のための余白 */
+      font-size: 1.6rem; /* 少し大きく */
       text-align: center;
-      color: #333;
+      color: #333; /* 少し濃く */
+      font-weight: 600; /* 少し太く */
+      border-bottom: 2px solid #e0e0e0; /* 下に薄いグレーの線を引く */
+      box-sizing: border-box; /* padding計算のため */
     }
-
     embed {
       width: 100%;
-      height: 90vh;
-      border: none;
+      max-width: 800px; /* PCで見たときに広がりすぎないように */
+      height: 75vh;     /* 高さを調整 */
+      border: 1px solid #ddd;
+      border-radius: 8px; /* 角を丸く */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 薄い影 */
     }
 
+    /* ここが「ボタン風」のスタイルです */
     a {
-      margin-top: 10px;
-      color: #007aff;
+      display: inline-block; /* ブロック要素化 */
+      margin-top: 20px;
+      padding: 12px 24px; /* 内側の余白 */
+      background-color: #007aff; /* Apple風の青 */
+      color: #ffffff; /* 文字色を白に */
       text-decoration: none;
       font-weight: bold;
       font-size: 1rem;
+      border-radius: 8px; /* 角を丸く */
+      transition: background-color 0.2s; /* ホバー時のアニメーション */
     }
 
+    /* マウスを乗せた時の色 */
     a:hover {
-      text-decoration: underline;
+      background-color: #0056b3;
     }
   </style>
-</head>
+  </head>
 <body>
   <h1>📘 MTE サバイバルゲーム ルールブック</h1>
 
   <embed src="文化祭ルールブック　客用.pdf#toolbar=0&view=fit" type="application/pdf" />
 
   <a href="文化祭ルールブック　客用.pdf" target="_blank">
-    📄 PDFを開く（iPhoneの方はこちら）
+    📄 PDFを全画面で開く
   </a>
 </body>
 </html>
