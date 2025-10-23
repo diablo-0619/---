@@ -3,62 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MTE際</title>
+  <title>MTE サバイバルゲーム ルールブック</title>
   <link rel="stylesheet" href="index.css">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      background-color: #f7f7f7;
+      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
     }
 
     h1 {
-      margin: 20px 0 10px;
+      margin: 10px 0;
+      font-size: 1.3rem;
       text-align: center;
-      font-size: 1.5rem;
       color: #333;
     }
 
-    .rulebook {
+    embed {
       width: 100%;
-      max-width: 900px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      height: 90vh;
+      border: none;
     }
 
-    img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 12px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    a {
+      margin-top: 10px;
+      color: #007aff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
     }
 
-    footer {
-      margin: 20px 0;
-      color: #777;
-      font-size: 0.9rem;
-      text-align: center;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>📘 MTE際 ルールブック</h1>
+  <h1>📘 MTE サバイバルゲーム ルールブック</h1>
 
- <div class="rulebook">
-  <img src="文化祭ルールブック/文化祭ルールブック　客用_page-0001.jpg" alt="ルールブック1ページ目">
-  <img src="文化祭ルールブック/文化祭ルールブック　客用_page-0002.jpg" alt="ルールブック2ページ目">
-</div>
+  <embed src="文化祭ルールブック　客用.pdf#toolbar=0&view=fit" type="application/pdf" />
 
-
-  <footer>
-    © 2025 MTE Festival
-  </footer>
+  <a href="文化祭ルールブック　客用.pdf" target="_blank">
+    📄 PDFを開く（iPhoneの方はこちら）
+  </a>
 </body>
 </html>
-
